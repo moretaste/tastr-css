@@ -16,8 +16,9 @@
  * DEFINE MAIN COLORS HERE FOR QUICK LOOK UP
 
  */
-body {
-  color: #1a1a1a;
+body
+{
+    color: #1a1a1a;
 }
 
 /* ==========================================================================
@@ -28,22 +29,32 @@ body {
  * 1. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 
-html {
-  font-family: 'PT Sans', serif;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  font-weight: normal;
-  font-style: normal;
-  -ms-text-size-adjust: 100%; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 1 */
+html
+{
+    font-family: 'PT Sans', serif;
+    font-size: .875rem;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+
+        -ms-text-size-adjust: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 1 */
 }
 
-@media only screen and (min-width: 48em) {
-  html { font-size: 1rem; }
+@media only screen and (min-width: 48em)
+{
+    html
+    {
+        font-size: 1rem;
+    }
 }
 
-@media only screen and (min-width: 80em) {
-  html { font-size: 1.125rem; }
+@media only screen and (min-width: 80em)
+{
+    html
+    {
+        font-size: 1.125rem;
+    }
 }
 
 /* ==========================================================================
@@ -60,20 +71,26 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 {
-  margin-top: 0;
-  word-spacing: normal;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  background-color: rgba(255, 105, 180, 0.1);
+.h6
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
+    margin-top: 0;
+
+    word-spacing: normal;
+
+    background-color: rgba(255, 105, 180, .1);
 }
 
 h1,
 h2,
 .h1,
-.h2 {
-  line-height: 3rem;
-  margin-bottom: calc((1.5rem - 3rem) + 3rem);
+.h2
+{
+    line-height: 3rem;
+
+    margin-bottom: calc((1.5rem - 3rem) + 3rem);
 }
 
 h3,
@@ -83,39 +100,47 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 {
-  line-height: 2rem;
-  margin-bottom: calc((1.5rem - 2rem) + 1.5rem);
+.h6
+{
+    line-height: 2rem;
+
+    margin-bottom: calc((1.5rem - 2rem) + 1.5rem);
 }
 
 h1,
-.h1 {
-  font-size: 3rem;
+.h1
+{
+    font-size: 3rem;
 }
 
 h2,
-.h2 {
-  font-size: 2.25rem;
+.h2
+{
+    font-size: 2.25rem;
 }
 
 h3,
-.h3 {
-  font-size: 1.5rem;
+.h3
+{
+    font-size: 1.5rem;
 }
 
 h4,
-.h4 {
-  font-size: 1.25rem;
+.h4
+{
+    font-size: 1.25rem;
 }
 
 h5,
-.h5 {
-  font-size: 1rem;
+.h5
+{
+    font-size: 1rem;
 }
 
 h6,
-.h6 {
-  font-size: 0.875rem;
+.h6
+{
+    font-size: .875rem;
 }
 
 /* ==========================================================================
@@ -124,69 +149,96 @@ h6,
 
 /* PARAGRAPH
    ========================================================================== */
-p {
-  margin: 0 0 1.5rem;
-  background-color: rgba(183, 225, 252, 0.1);
+p
+{
+    margin: 0 0 1.5rem;
+
+    background-color: rgba(183, 225, 252, .1);
 }
 
 /* BLOCKQUOTE
    ========================================================================== */
-blockquote {
-  margin: 0 0 1.5rem;
-  padding: 1rem 1.25rem 0.5rem 1.5rem;
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
+blockquote
+{
+    margin: 0 0 1.5rem;
+    padding: 1rem 1.25rem .5rem 1.5rem;
+
+    border-left: 1px solid rgba(0, 0, 0, .2);
 }
 
-cite {
-  font-style: italic;
-  display: block;
+cite
+{
+    font-style: italic;
+
+    display: block;
 }
 
-cite::before {
-  content: '\2014 \0020';
+cite::before
+{
+    content: '\2014 \0020';
 }
 
-q { display: inline; }
-q::before { content: open-quote; }
-q::after { content: close-quote; }
+q
+{
+    display: inline;
+}
+q::before
+{
+    content: open-quote;
+}
+q::after
+{
+    content: close-quote;
+}
 
 /* LISTS UL OL DL
    ========================================================================== */
 ul,
 ol,
-dl {
-  margin: 0 0 1.5rem;
-  background-color: rgba(183, 225, 252, 0.3);
+dl
+{
+    margin: 0 0 1.5rem;
+
+    background-color: rgba(183, 225, 252, .3);
 }
 
 li ul,
-li ol {
-  margin: 0;
+li ol
+{
+    margin: 0;
 }
 
-dl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 0.5rem;
+dl
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    padding: .75rem;
+
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 dt,
-dd {
-  margin: 0;
+dd
+{
+    margin: 0;
 }
 
-dt {
-  width: 25%;
-  font-weight: bold;
-  text-align: right;
-  padding: 0 1rem 0 0;
+dt
+{
+    font-weight: bold;
+
+    width: 25%;
+    padding: 0 1rem 0 0;
+
+    text-align: right;
 }
 
-dd {
-  width: 75%;
+dd
+{
+    width: 75%;
 }
 
 /* HR
@@ -197,14 +249,18 @@ dd {
   * 2. Show the overflow in Edge and IE.
   */
 
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.5);
-  border-width: 1px 0 0;
-  margin: -1px 0 1.5rem 0;
+hr
+{
+    overflow: visible; /* 2 */
+
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    margin: 0;
+    margin-bottom: calc(1.5rem - 1px);
+
+    border-width: 1px 0 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, .5);
 }
 
 /* ==========================================================================
@@ -212,59 +268,95 @@ hr {
    ========================================================================== */
 
 /* https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements */
-span { display: inline; }
+span
+{
+    display: inline;
+}
 
 /* br { }
 wbr { } */
 
 em,
-i { font-style: italic; }
+i
+{
+    font-style: italic;
+}
 
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
 b,
-strong { font-weight: inherit; }
+strong
+{
+    font-weight: inherit;
+}
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 b,
-strong { font-weight: bolder; }
+strong
+{
+    font-weight: bolder;
+}
 
 /**
  * Add the correct font size in all browsers.
  */
-small { font-size: 80%; }
+small
+{
+    font-size: 80%;
+}
 
-u { text-decoration: underline; }
-s { text-decoration: line-through; }
-del { text-decoration: line-through; }
-ins { text-decoration: underline; }
+u
+{
+    text-decoration: underline;
+}
+s
+{
+    text-decoration: line-through;
+}
+del
+{
+    text-decoration: line-through;
+}
+ins
+{
+    text-decoration: underline;
+}
 
 /**
  * Add the correct background and color in IE 9-.
  */
-mark {
-  background-color: #ff0;
-  color: #000;
+mark
+{
+    color: #000;
+    background-color: #ff0;
 }
 
 /**
  * Add the correct font style in Android 4.3-.
  */
-dfn { font-style: italic; }
+dfn
+{
+    font-style: italic;
+}
 
 /**
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-abbr { display: inline; }
+abbr
+{
+    display: inline;
+}
 
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+abbr[title]
+{
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+
+    border-bottom: none; /* 1 */
 }
 
 /**
@@ -272,19 +364,24 @@ abbr[title] {
  * all browsers.
  */
 sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+sup
+{
+    font-size: 75%;
+    line-height: 0;
+
+    position: relative;
+
+    vertical-align: baseline;
 }
 
-sub {
-  bottom: -0.25em;
+sub
+{
+    bottom: -.25em;
 }
 
-sup {
-  top: -0.5em;
+sup
+{
+    top: -.5em;
 }
 
 /* time {}
@@ -293,13 +390,15 @@ var {} */
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
+ * .875em seems to be better for vertical rhythm(?)
  */
 code,
 kbd,
 pre,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+samp
+{
+    font-family: monospace, monospace; /* 1 */
+    font-size: .875em; /* 2 */
 }
 
 /* ==========================================================================
@@ -317,26 +416,31 @@ samp {
 
 article,
 aside,
-details, /* 1 */
+details,
+/* 1 */
 figcaption,
 figure,
 footer,
 header,
-main, /* 2 */
+main,
+/* 2 */
 menu,
 nav,
 section,
-summary { /* 1 */
-  display: block;
+summary
+{
+    /* 1 */
+    display: block;
 }
 
 /**
  * Keep text measures between 45 - 75 characters
  * Anywhere between 22.5em to 37.5em
  */
-main article {
-  max-width: 37.5em;
-  margin: 0 auto;
+main article
+{
+    max-width: 37.5em;
+    margin: 0 auto;
 }
 
 /* ==========================================================================
