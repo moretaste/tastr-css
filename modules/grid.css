@@ -1,0 +1,25 @@
+/* ==========================================================================
+   GRID
+   ========================================================================== */
+/* Version
+   ========================================================================== */
+/**
+ * tastr 0.01
+ * author: rudy montoya rodriguez / @_moretaste
+ * url: http://www.moretaste.nl
+ */
+html {
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          height: 100%;
+}
+*, *:before, *:after {
+     -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+body {
+ margin: 0;
+ padding: 1.5rem;
+}

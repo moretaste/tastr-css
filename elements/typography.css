@@ -1,0 +1,351 @@
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+
+/**
+ * tastr 0.01 (including normalize.css 4.1.1)
+ * author: rudy montoya rodriguez / @_moretaste
+ * url: http://www.moretaste.nl
+ */
+
+/* ==========================================================================
+   COLORS
+   ========================================================================== */
+
+/**
+ * DEFINE MAIN COLORS HERE FOR QUICK LOOK UP
+
+ */
+body {
+  color: #1a1a1a;
+}
+
+/* ==========================================================================
+   BASIC FONT AND SIZING
+   ========================================================================== */
+
+/**
+ * 1. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+
+html {
+  font-family: 'PT Sans', serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: normal;
+  font-style: normal;
+  -ms-text-size-adjust: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 1 */
+}
+
+@media only screen and (min-width: 48em) {
+  html { font-size: 1rem; }
+}
+
+@media only screen and (min-width: 80em) {
+  html { font-size: 1.125rem; }
+}
+
+/* ==========================================================================
+   HEADINGS
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-top: 0;
+  word-spacing: normal;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  background-color: rgba(255, 105, 180, 0.1);
+}
+
+h1,
+h2,
+.h1,
+.h2 {
+  line-height: 3rem;
+  margin-bottom: calc((1.5rem - 3rem) + 3rem);
+}
+
+h3,
+h4,
+h5,
+h6,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: 2rem;
+  margin-bottom: calc((1.5rem - 2rem) + 1.5rem);
+}
+
+h1,
+.h1 {
+  font-size: 3rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.25rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.25rem;
+}
+
+h5,
+.h5 {
+  font-size: 1rem;
+}
+
+h6,
+.h6 {
+  font-size: 0.875rem;
+}
+
+/* ==========================================================================
+   CONTENT
+   ========================================================================== */
+
+/* PARAGRAPH
+   ========================================================================== */
+p {
+  margin: 0 0 1.5rem;
+  background-color: rgba(183, 225, 252, 0.1);
+}
+
+/* BLOCKQUOTE
+   ========================================================================== */
+blockquote {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.25rem 0.5rem 1.5rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+cite {
+  font-style: italic;
+  display: block;
+}
+
+cite::before {
+  content: '\2014 \0020';
+}
+
+q { display: inline; }
+q::before { content: open-quote; }
+q::after { content: close-quote; }
+
+/* LISTS UL OL DL
+   ========================================================================== */
+ul,
+ol,
+dl {
+  margin: 0 0 1.5rem;
+  background-color: rgba(183, 225, 252, 0.3);
+}
+
+li ul,
+li ol {
+  margin: 0;
+}
+
+dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+
+dt,
+dd {
+  margin: 0;
+}
+
+dt {
+  width: 25%;
+  font-weight: bold;
+  text-align: right;
+  padding: 0 1rem 0 0;
+}
+
+dd {
+  width: 75%;
+}
+
+/* HR
+   ========================================================================== */
+
+/**
+  * 1. Add the correct box sizing in Firefox.
+  * 2. Show the overflow in Edge and IE.
+  */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-width: 1px 0 0;
+  margin: -1px 0 1.5rem 0;
+}
+
+/* ==========================================================================
+   INLINE ELEMENTS
+   ========================================================================== */
+
+/* https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements */
+span { display: inline; }
+
+/* br { }
+wbr { } */
+
+em,
+i { font-style: italic; }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong { font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong { font-weight: bolder; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small { font-size: 80%; }
+
+u { text-decoration: underline; }
+s { text-decoration: line-through; }
+del { text-decoration: line-through; }
+ins { text-decoration: underline; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn { font-style: italic; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr { display: inline; }
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* time {}
+var {} */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* ==========================================================================
+   BLOCK ELEMENTS
+   ========================================================================== */
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+
+/**
+ * Keep text measures between 45 - 75 characters
+ * Anywhere between 22.5em to 37.5em
+ */
+main article {
+  max-width: 37.5em;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   WEBFONTS
+   ========================================================================== */
+
+/**
+ * Self hosting google webfonts
+ * https://google-webfonts-helper.herokuapp.com/fonts
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,700italic|Droid+Serif:400,400italic,700,700italic|PT+Sans:400,400italic,700,700italic);

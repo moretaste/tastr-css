@@ -1,0 +1,38 @@
+/* ==========================================================================
+   LINKS
+   ========================================================================== */
+/**
+ * tastr 0.01 (including normalize.css 4.1.1)
+ * author: rudy montoya rodriguez / @_moretaste
+ * url: http://www.moretaste.nl
+ */
+/* ==========================================================================
+   LINKS
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+  color: #0095dd;
+  border-color: #1E5C90;
+  border-style: solid;
+  border-width: 0;
+  text-decoration: none;
+}
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+a:hover {
+ border-width: 0 0 1px 0;
+}
+a:visited {
+ color: #1E5C90;
+}
